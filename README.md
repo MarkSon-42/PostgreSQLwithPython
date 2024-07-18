@@ -1,40 +1,49 @@
-# FinancialDataWithPostgreSQL
-
-## 프로젝트 설명
-
-이 레포지토리는 PostgreSQL을 사용하여 금융 데이터를 관리하고 분석하는 Python 애플리케이션을 포함하고 있습니다. 이 애플리케이션은 대량의 금융 데이터를 처리하는데 효과적이고 효율적인 솔루션을 제공하도록 설계되었습니다.
+# PostgreSQL과 Python을 이용한 데이터베이스 관리
+##프로젝트 설명
+이 레포지토리는 PostgreSQL을 사용하여 데이터베이스를 관리하고 Python을 통해 이를 조작하는 방법을 소개합니다. PostgreSQL의 설치부터 기본적인 사용법, 그리고 Python과의 연동까지 다룹니다.  
 
 ## 기능
 
-- **데이터 수집**: 애플리케이션은 다양한 소스와 형식에서 금융 데이터를 수집하여 PostgreSQL 데이터베이스에 삽입할 수 있습니다.
-- **데이터 관리**: 애플리케이션은 PostgreSQL 데이터베이스에서 금융 데이터를 관리(삽입, 업데이트, 삭제)하는 기능을 제공합니다.
-- **데이터 분석**: 애플리케이션은 다양한 금융 지표를 계산하거나 시계열 분석을 수행하는 등 금융 데이터를 분석하는 여러 기능을 포함하고 있습니다.
+PostgreSQL 설치: PostgreSQL의 설치 방법을 단계별로 안내합니다.
+pgAdmin 사용법: 가장 많이 사용되는 PostgreSQL 관리 도구인 pgAdmin의 기본 사용법을 소개합니다.
+SQL Shell(psql) 사용법: 명령줄 인터페이스를 통한 PostgreSQL 조작 방법을 설명합니다.
+SQL 기초: PostgreSQL을 효과적으로 사용하기 위한 SQL 기본 문법을 다룹니다.
+Python 연동: psycopg2를 이용하여 Python에서 PostgreSQL 데이터베이스에 접근하는 방법을 소개합니다.
 
-## 사용 기술
+## 사용 기술  
 
-- **Python**: 애플리케이션은 데이터 조작 및 분석에 강력하고 유연한 프로그래밍 언어인 Python으로 작성되었습니다.
-- **PostgreSQL**: PostgreSQL은 강력한 오픈 소스 관계형 데이터베이스 시스템입니다. 이 애플리케이션에서는 금융 데이터를 저장하고 관리하는 데 사용됩니다.
-- **SQLAlchemy**: SQLAlchemy는 Python의 SQL 툴킷 및 객체-관계 매핑(ORM) 시스템입니다. 기업 수준의 유명한 지속성 패턴의 전체 스위트를 제공합니다.
+PostgreSQL: 강력한 오픈 소스 관계형 데이터베이스 시스템
+Python: 데이터 조작 및 분석에 유용한 프로그래밍 언어
+psycopg2: Python에서 PostgreSQL 데이터베이스에 접근하기 위한 라이브러리
 
-## 설치 및 설정
+## 설치 및 설정  
 
 1. 레포지토리를 로컬 머신에 클론합니다.
 2. pip를 사용하여 필요한 Python 패키지를 설치합니다:
-
-
-
 ~~~
 pip install -r requirements.txt
 ~~~
-
 3. PostgreSQL 데이터베이스를 설정하고 애플리케이션의 데이터베이스 구성을 업데이트합니다.
 4. 애플리케이션을 실행합니다:
-
 ~~~
 python main.py
 ~~~
 
 ## 사용법
 
-애플리케이션을 사용하여 금융 데이터를 수집, 관리, 분석하는 방법에 대한 자세한 사용 지침을 여기에 제공합니다.
+레포지토리의 예제 코드와 설명을 참고하여 PostgreSQL과 Python을 연동하는 방법을 학습할 수 있습니다.
+참고 자료
 
+[소스 코드 - TestPg]
+ - https://github.com/mokwongame/Python_... (GitHub 소스 코드)
+
+
+
+[참고문헌]
+1. 꿈꾸는 개발자, DBA 커뮤니티 구루비, PostgreSQL 기본강좌, 2015: http://www.gurubee.net/postgresql/basic
+2. PostgreSQL 문서들: https://postgresql.kr/docs
+3. 박응용, 점프 투 파이썬, 위키독스, 2023: https://wikidocs.net/book/1
+
+
+
+> 이 프로젝트를 통해 PostgreSQL과 Python을 이용한 데이터베이스 관리의 기초를 익힐 수 있습니다.
